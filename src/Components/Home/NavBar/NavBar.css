@@ -1,0 +1,56 @@
+.navLink{
+    margin: 10px 20px;
+	color: black;
+	text-decoration: none;
+}
+
+.navLink {
+	font-weight: 400;
+	font-size: 14px;
+	letter-spacing: 0.396px;
+	color: #474747;
+	position: relative;
+}
+
+.navLink{
+    margin: 10px 20px;
+    color: black;
+}
+
+.navLink:not(:last-child) {
+	margin-right: 20px;
+}
+
+.navLink:focus {
+	font-weight: 600 !important;
+	outline: none;
+}
+
+@media (min-width: 992px) {
+	.navLink:after {
+		content: "";
+		position: absolute;
+		width: 90%;
+		height: 3px;
+		left: 6%;
+		bottom: 10px;
+		/* background: #7ab259; */
+		opacity: 0;
+		transition: 0.2s linear;
+		transform: scaleX(0.5);
+	}
+
+	.navLink:hover:after,
+	.navLink:focus:after {
+		opacity: 1;
+		transform: scaleX(1);
+	}
+}
+
+.navLink {
+	border-color: #000 !important;
+}
+
+button.navLink {
+	border-color: transparent !important;
+}

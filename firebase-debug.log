@@ -1,0 +1,52 @@
+[debug] [2020-10-17T07:06:35.401Z] ----------------------------------------------------------------------
+[debug] [2020-10-17T07:06:35.404Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\01991709495\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-10-17T07:06:35.404Z] CLI Version:   8.12.1
+[debug] [2020-10-17T07:06:35.404Z] Platform:      win32
+[debug] [2020-10-17T07:06:35.405Z] Node Version:  v12.18.4
+[debug] [2020-10-17T07:06:35.406Z] Time:          Sat Oct 17 2020 13:06:35 GMT+0600 (Bangladesh Standard Time)
+[debug] [2020-10-17T07:06:35.406Z] ----------------------------------------------------------------------
+[debug] [2020-10-17T07:06:35.406Z] 
+[debug] [2020-10-17T07:06:35.415Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-17T07:06:35.416Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\01991709495\Desktop\Web Development\REACT\react-1
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using agency-ce295. 
+[debug] [2020-10-17T07:06:40.437Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/agency-ce295  
+ 
+[debug] [2020-10-17T07:07:02.351Z] Server Error. connect ETIMEDOUT 74.125.130.95:443
+[debug] [2020-10-17T07:07:22.009Z] FirebaseError: Server Error. connect ETIMEDOUT 74.125.130.95:443
+    at Request._callback (C:\Users\01991709495\AppData\Roaming\npm\node_modules\firebase-tools\lib\api.js:32:31)
+    at self.callback (C:\Users\01991709495\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:315:20)
+    at Request.EventEmitter.emit (domain.js:483:12)
+    at Request.onRequestError (C:\Users\01991709495\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\request\request.js:877:8)
+    at ClientRequest.emit (events.js:327:22)
+    at ClientRequest.EventEmitter.emit (domain.js:483:12)
+    at TLSSocket.socketErrorListener (_http_client.js:426:9)
+    at TLSSocket.emit (events.js:315:20)
+    at TLSSocket.EventEmitter.emit (domain.js:483:12)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+[error] 
+[error] Error: Failed to get Firebase project agency-ce295. Please make sure the project exists and your account has permission to access it.
